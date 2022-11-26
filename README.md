@@ -1,6 +1,6 @@
-# Welcome to my repository for [FreeCodeCamp](https://www.freecodecamp.org/) certification projects
+# Welcome to my repository for [FreeCodeCamp](https://www.freecodecamp.org/) Certification projects
 
-currently, I have **3** FreeCodeCamp certificates:
+Currently, I have **3** FreeCodeCamp certificates:
 
 ✨ &nbsp;[FreeCodeCamp's Responsive Web Design Certification](https://www.freecodecamp.org/certification/andresprza/responsive-web-design)\
 ✨ &nbsp;[FreeCodeCamp's JavaScript Algorithms and data structures Certification](https://www.freecodecamp.org/certification/andresprza/javascript-algorithms-and-data-structures)\
