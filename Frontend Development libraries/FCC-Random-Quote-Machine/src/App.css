@@ -1,0 +1,119 @@
+:root {
+  --kindawhite: #fffe;
+}
+
+.App, .App *{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--maincolor);
+  transition: background-color 1s;
+}
+
+.card {
+  background-color: var(--kindawhite);
+  border-radius: 3px;
+  padding: 40px 50px;
+  min-width: 450px;
+  width: 50vw;
+  min-height: 100px;
+  height: auto;
+  color: var(--maincolor);
+  transition: color 1s;
+  flex-direction: column;
+  transition: height 1s;
+}
+
+.quote-text {
+  flex:1;
+  text-align: center;
+  font-size: 1.7rem;
+  transition: opacity 0.5s;
+}
+
+.quote-text p, .quote-text p i {
+  display: inline;
+}
+
+.quote-author {
+  text-align: right;
+  justify-content: right;
+  height: 60px;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.buttons-row {
+  height: 40px;
+  width: 100%;
+} 
+
+.left-buttons {
+  flex: 1;
+  height: 100%;
+  gap: 10px;
+  justify-content: left;
+}
+
+.right-buttons {
+  flex: 1;
+  height: 100%;
+  justify-content: right;
+}
+
+.button {
+  color: var(--kindawhite);
+  background-color: var(--maincolor);
+  transition: background-color 1s;
+  height: 100%;
+  border-radius: 2px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  background-color: var(--kindawhite);
+  color: var(--maincolor);
+  transition: color 1s;
+  box-shadow: inset 0 0 15px #0005;
+  transition: none;
+}
+
+.twitter {
+  align-self: flex-start;
+  width: 40px;
+}
+
+.tumblr {
+  align-self: flex-start;
+  width: 40px;
+}
+
+.new-quote {
+  align-self: flex-end;
+  padding: 0 20px;
+}
+
+/* Responsive */
+
+@media(max-width : 550px) {
+  
+  .card {
+    padding: 30px 40px;
+    min-width: min-content;
+    width: fit-content;
+    min-height: 200px;
+    height: auto;
+    border-radius: 0;
+  }
+}

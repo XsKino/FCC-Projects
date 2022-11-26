@@ -1,0 +1,98 @@
+:root {
+  --bg-color1: #111;
+  --bg-color2: #222;
+  --highlight-color: #f05;
+  --main-color: #cacaca;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;background-color: var(--bg-color1);
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+
+  background-color: var(--bg-color2);
+  color: var(--main-color);
+  min-width: 24rem;
+  min-height: 30rem;
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  background-color: var(--bg-color1);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.display-container > * {
+  height: 2rem;
+}
+
+.keyBoard {
+  flex: 1;
+  display: grid;
+
+  grid-template-areas: 
+    'clear clear divide  multiply'
+    'seven eight nine    substract'
+    'four  five  six     add'
+    'one   two   three   equals'
+    'zero  zero  decimal equals';
+
+  gap: 0.3rem;
+}
+
+#clear {grid-area: clear;}
+#divide {grid-area: divide;}
+#multiply {grid-area: multiply;}
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#substract {grid-area: substract;}
+#four {grid-area: four;}
+#five {grid-area: five;}
+#six {grid-area: six;}
+#add {grid-area: add;}
+#one {grid-area: one;}
+#two {grid-area: two;}
+#three {grid-area: three;}
+#equals {grid-area: equals;}
+#zero {grid-area: zero;}
+#decimal {grid-area: decimal;}
+
+.Key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+
+  background-color: var(--bg-color1);
+  user-select: none;
+  cursor: pointer;
+
+  font-size: 1.5rem;
+}
+
+.Key:hover {
+  outline: 0.1rem solid var(--highlight-color);
+}
+
+.Key:active {
+  background-color: var(--highlight-color);
+}

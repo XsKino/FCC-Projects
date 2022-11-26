@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Survey Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">
+    <!-- Assistant font importation -->
+    <link
+      rel="icon"
+      href="https://free-code-camp-indy.github.io/FCC-Remote-Hack/images/fcc-logo-white.png"
+      type="image/png"
+    />
+    <!-- FreeCodeCampLogo -->
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 id="title">software development</h1>
+      <p id="description">survey form</p>
+    </header>
+    <main id="main">
+      <form action="" id="survey-form">
+        <div id="form-div">
+          <label for="name" id="name-label">name</label>
+          <div class="form-control-container">
+            <input required id="name" type="text" class="form-control" placeholder=""></input>
+          </div>
+          <label for="email" id="email-label">e-mail</label>
+          <div class="form-control-container">
+            <input required id="email" type="email" class="form-control" placeholder=""></input>
+          </div>
+          <label for="number" id="number-label">age</label>
+          <div class="form-control-container">
+            <input id="number" type="number" class="form-control" placeholder="" min="0" max="150"></input>
+          </div>
+          <label for="dropdown" id="dropdown-label">programming skill level</label>
+          <div class="form-control-container">
+            <select id="dropdown" type="dropdown" class="form-control" placeholder="">
+              <!-- <option disabled="" selected="" value="">programming skill level</option> -->
+              <option value="trainee">trainee</option>
+              <option value="junior">junior</option>
+              <option value="mid-level">mid-level</option>
+              <option value="senior">senior</option>
+            </select>
+          </div>
+
+          <p id="radio-text">software development area</p>
+          <label class="radio-container" for="software-ingeneering">
+            <input type="radio" id="software-ingeneering" name="radio" value="software-ingeneering">
+            <span class="radio-checkmark"></span>
+            software ingeneering
+          </label>
+          <label class="radio-container" for="data-science">
+            <input type="radio" id="data-science" name="radio" value="data-science">
+            <span class="radio-checkmark"></span>
+            data analytics
+          </label>
+          <label class="radio-container" for="videogame-development">
+            <input type="radio" id="videogame-development" name="radio" value="videogame-development">
+            <span class="radio-checkmark"></span>
+            videogame development
+          </label>
+          <label class="radio-container" for="web-development">
+            <input type="radio" id="web-development" name="radio" value="web-development">
+            <span class="radio-checkmark"></span>
+            web development
+          </label>
+          <label class="radio-container" for="mobile-application-development">
+            <input type="radio" id="mobile-application-development" name="radio" value="mobile-application-development">
+            <span class="radio-checkmark"></span>
+            mobile application development
+          </label>
+          <label class="radio-container" for="other">
+            <input type="radio" id="other" name="radio" value="mobile-application-development">
+            <span class="radio-checkmark"></span>
+            other
+          </label>
+
+          <p id="checkbox-text">learned languages</p>
+          <label class="checkbox-container">
+              <input type="checkbox" name="checkbox" value="c">
+              <span class="checkbox-checkmark"></span>
+            c
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="c++">
+            <span class="checkbox-checkmark"></span>
+            c++
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="c#">
+            <span class="checkbox-checkmark"></span>
+            c#
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="java">
+            <span class="checkbox-checkmark"></span>
+            java
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="html">
+            <span class="checkbox-checkmark"></span>
+            html
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="css">
+            <span class="checkbox-checkmark"></span>
+            css
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="javascript">
+            <span class="checkbox-checkmark"></span>
+            javascript
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="python">
+            <span class="checkbox-checkmark"></span>
+            python
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" name="checkbox" value="other-more">
+            <span class="checkbox-checkmark"></span>
+            other / more
+          </label>
+
+          <p id="textarea-text">Tell us your story!</p>
+          <div class="form-control-container" id="textarea-container">
+            <textarea class="form-control" id="textarea" placeholder=""></textarea>
+          </div>
+
+          <div id="submit-container">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

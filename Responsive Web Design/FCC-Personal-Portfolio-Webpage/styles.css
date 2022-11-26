@@ -1,0 +1,377 @@
+:root {
+  --bg-color: #2b2f32;
+  --fg-color: #303438;
+  --hl-color: #f04494;
+}
+
+:target::before {
+  content:"";
+  display: block;
+  position: relative;
+  top: -70px; 
+  visibility: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  color: var(--text-color);
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+  color: var(--hl-color);
+}
+
+html {
+  background: rgb(240,68,148);
+background: linear-gradient(7deg, rgba(240,68,148,1) 29%, rgba(142,127,191,1) 73%, rgba(161,138,232,1) 100%);
+}
+
+hr {
+  color: var(--hl-color);
+  width: 80%;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: var(--fg-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    list-style-type: none;
+    height: 100%;
+  }
+
+    #navbar ul li {
+      height: 100%;
+    }
+
+      #navbar ul li a{
+        color: var(--hl-color);
+        padding: 0 20px 0 20px;
+        text-decoration: none;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      #navbar ul li a:hover{
+        background-color: var(--hl-color);
+        color: var(--fg-color);
+      }
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  #welcome-section h1 {
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px 0 #fff, inset 0 0 5px #fff;
+    text-shadow: 0 0 5px #fff;
+    padding:25px;
+    margin:15px;
+  }
+
+  #welcome-section p {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+  }
+
+#projects,
+#skills,
+#contact{
+  height: 100vh;
+  background-color: var(--fg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.anchor-fix {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.section-container {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects-container {
+  padding: 40px 20px 40px 20px;
+  margin-top: 25px;
+
+  width: 90%;
+  height: 60%;
+  
+  display: flex;
+}
+
+  #projects-container a {
+    text-decoration: none;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 20px #0007;
+    margin: 0 15px 0 15px;
+  }
+  
+  #projects-container a:hover {
+    background-color: var(--hl-color);
+  }
+
+  #projects-container a:hover h2 {
+    color: var(--fg-color);
+  }
+  
+  #projects-container a div {
+    flex: 1;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--hl-color);
+background: linear-gradient(172deg, rgba(240,68,148,1) 0%, rgba(142,127,191,1) 72%, rgba(179,178,240,1) 100%);
+  }
+
+  #projects-container a h2 {
+    color: var(--hl-color);
+    padding: 25px;
+    font-size: 1rem;
+  }
+
+#skills {
+  background-color: var(--bg-color);
+}
+
+  #skills .section-container {
+    flex-direction: column;
+  }
+
+.skills-container {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.skill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill img {
+  width: 5rem;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#contact .section-container {
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+}
+
+#contact .section-container div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 15px 20px 15px;
+}
+
+#contact .section-container img {
+  height: 3rem;
+  width: auto;
+}
+
+#contact .section-container a {
+  color: var(--hl-color);
+  font-size: 2rem;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+#contact .section-container a:hover {
+  color: #fff;
+}
+
+#github-logo,
+#twitter-logo,
+#linkedin-logo,
+#codepen-logo {
+  height: 2.8rem;
+  background-color: var(--hl-color);
+  border-radius: 0.5rem;
+  position: relative;
+  top: 1rem;
+  padding: 0.2rem;
+}
+
+#github-logo {
+  padding: 0;
+  height: 3.5rem !important;
+}
+
+#contact .section-container a:hover #codepen-logo,
+#contact .section-container a:hover #twitter-logo,
+#contact .section-container a:hover #linkedin-logo,
+#contact .section-container a:hover #github-logo {
+  background-color: #fff;
+}
+
+/* scrollbar */
+
+* {
+  scrollbar-width: 0.6vw;
+  scrollbar-color: #60597d #363c41;
+}
+
+*::-webkit-scrollbar {
+  width: 1vw;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: #363c41;
+}
+
+*::-webkit-scrollbar-track:hover{
+  background-color: #3e454b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #60597d;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #6d658e;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--hl-color);
+}
+
+/* Responsive */
+
+@media(max-width: 600px) {
+
+  :root {
+    font-size: 13px;
+  }
+
+  #navbar {
+    justify-content: space-evenly;
+  }
+
+  #navbar ul{
+    margin: 0;
+    width: 100%;
+  }
+
+  #navbar ul li {
+    width: 33.33%;
+  }
+
+  #navbar ul li a {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #projects-container {
+    padding: 10px;
+    margin-top: 15px;
+    width: 75%;
+    height: 80%;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  #projects-container a {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 20px #0007;
+    margin: 15px 0 15px 0;
+  }
+
+  #projects-container a div {
+    padding: 40px 0 40px 0;
+  }
+
+  .skills-container {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    margin: 10px 0 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+
+  #skills {
+    height: auto;
+  }
+
+  .skill {
+    margin: 15px 0 15px 0;
+    flex-direction: row;
+  }
+  
+  .skill img{
+    margin-right: 20px;
+  }
+
+  #skills .section-title {
+    padding-top: 30px;
+  }
+
+  #projects-container a h2,
+  #projects-container a p {
+    color: var(--hl-color);
+    padding: 10px;
+  }
+}
