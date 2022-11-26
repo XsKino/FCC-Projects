@@ -1,6 +1,7 @@
 # Welcome to my repository for [FreeCodeCamp](https://www.freecodecamp.org/) certification projects
 
 currently, I have **3** FreeCodeCamp certificates:
+
 ✨ &nbsp;[FreeCodeCamp's Responsive Web Design Certification](https://www.freecodecamp.org/certification/andresprza/responsive-web-design)\
 ✨ &nbsp;[FreeCodeCamp's JavaScript Algorithms and data structures Certification](https://www.freecodecamp.org/certification/andresprza/javascript-algorithms-and-data-structures)\
 ✨ &nbsp;[FreeCodeCamp's Front End Development Libraries Certification](https://www.freecodecamp.org/certification/andresprza/front-end-development-libraries)
